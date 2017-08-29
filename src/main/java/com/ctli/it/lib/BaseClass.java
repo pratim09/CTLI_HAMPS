@@ -445,7 +445,8 @@ public class BaseClass {
 	
 	public void getPageScreenShot()
 	{
-		String imagePath="./ScreenShots"+"/"+getFormatedDateTime()+".png";
+		//String imagePath="./ScreenShots"+"/"+getFormatedDateTime()+".png";
+		String imagePath="./target/ScreenShots/Failure.png";
 		EventFiringWebDriver edriver=new EventFiringWebDriver(driver);
 		try{
 			FileUtils.copyFile(edriver.getScreenshotAs(OutputType.FILE),new File(imagePath));
